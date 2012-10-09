@@ -1,3 +1,5 @@
+import com.typesafe.startscript.StartScriptPlugin
+
 organization := "com.scalatypes"
 
 name := "scalatypes.com"
@@ -21,3 +23,4 @@ libraryDependencies ++= Seq(
 
 resolvers += "Sonatype OSS Snapshots" at "http://oss.sonatype.org/content/repositories/snapshots/"
 
+seq(StartScriptPlugin.startScriptForClassesSettings: _*)
