@@ -1,4 +1,4 @@
-import com.typesafe.startscript.StartScriptPlugin
+//import com.typesafe.startscript.StartScriptPlugin
 
 organization := "com.scalatypes"
 
@@ -22,5 +22,7 @@ libraryDependencies ++= Seq(
 )
 
 resolvers += "Sonatype OSS Snapshots" at "http://oss.sonatype.org/content/repositories/snapshots/"
+//resolvers += Resolvers.sonatypeRepo("snapshots")
 
-seq(StartScriptPlugin.startScriptForClassesSettings: _*)
+//seq(StartScriptPlugin.startScriptForWarSettings: _*)
+
