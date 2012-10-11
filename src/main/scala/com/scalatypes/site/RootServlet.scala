@@ -9,6 +9,10 @@ class RootServlet extends ScalatraServlet with ScalateSupport {
     redirect("http://scalatypes.libsyn.com")
   }
 
+  get("/rss") {
+    redirect("http://scalatypes.libsyn.com/rss")
+  }
+
   notFound {
     // remove content type in case it was set through an action
     contentType = null
