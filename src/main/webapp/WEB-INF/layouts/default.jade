@@ -9,11 +9,15 @@ html(lang="en")
     meta(name="description" content="")
     meta(name="author" content="")
 
-    link(href="http://scalatypes.s3.amazonaws.com/css/bootstrap.css" rel="stylesheet")
-    link(href="http://scalatypes.s3.amazonaws.com/css/styles.css" rel="stylesheet")
-    link(href="http://scalatypes.s3.amazonaws.com/css/bootstrap-responsive.css" rel="stylesheet")
+    link(href="http://scalatypes.s3.amazonaws.com/css/bootstrap.css"
+         rel="stylesheet")
+    link(href="http://scalatypes.s3.amazonaws.com/css/styles.css"
+         rel="stylesheet")
+    link(href="http://scalatypes.s3.amazonaws.com/css/bootstrap-responsive.css"
+         rel="stylesheet")
 
-    link(rel="shortcut icon" href="http://scalatypes.s3.amazonaws.com/img/ico/favicon.ico")
+    link(rel="shortcut icon"
+         href="http://scalatypes.s3.amazonaws.com/img/ico/favicon.ico")
     link(rel="apple-touch-icon-precomposed"
          sizes="144x144"
          href="http://scalatypes.s3.amazonaws.com/img/ico/apple-touch-icon-144.png")
@@ -43,11 +47,11 @@ html(lang="en")
             div(class="nav-collapse collapse")
               ul(class="nav")
                 li(class="active")
-                  a(href="index.html") Podcast
+                  a(href="/") Home
                 li
-                  a(href="archives.html") Archives
+                  a(href="episodes") Episodes
                 li
-                  a(href="community.html") Community
+                  a(href="community") Community
       div(class="content container")
         div(class="row")
           div(class="span8")
@@ -66,7 +70,7 @@ html(lang="en")
               li
                 a(href="http://www.twitter.com/scalatypes") Twitter
               li
-                a(href="https://groups.google.com/forum/?hl=en#!forum/scala-types") Scala Types Google group
+                a(href="https://groups.google.com/forum/?hl=en#!forum/scala-types") Scala Types Google Group
           div(class="span3")
             span(class="footer-title") Syndication
             ul
@@ -75,10 +79,23 @@ html(lang="en")
               li
                 a(href="http://scalatypes.com/rss") RSS
           div(class="span3")
-            span(class="footer-title") License
+            span(class="footer-title") Podcast Audio License
             ul
               li
                 a(href="http://creativecommons.org/licenses/by-nc-nd/3.0/")
                   img(src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png")
+          div(class="span3")
+            span(class="footer-title") Website Code License
+            ul
+              li
+                a(href="http://www.gnu.org/licenses/agpl-3.0.html") AGPLv3
+              li
+                a(href="http://joaosilva.co.uk/") Designed by Joao Da Silva
+              li
+                a(href="http://github.com/ymasory/scalatypes.com") Developed on GitHub
+              li
+                a(href="http://scalatra.org") Powered by Scalatra
+
+
     script(src="http://code.jquery.com/jquery-latest.js")
     script(src="http://scalatypes.s3.amazonaws.com/js/bootstrap.min.js")

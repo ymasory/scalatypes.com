@@ -10,6 +10,26 @@ class RootServlet extends ScalatraServlet with ScalateSupport {
     jade("index")
   }
 
+  get("/episodes") {
+    contentType = "text/html"
+    jade("episodes")
+  }
+
+  get("/episodes/:id") {
+    contentType = "text/html"
+    jade("episode", "id" -> params("id").toLong)
+  }
+
+  get("/community") {
+    contentType = "text/html"
+    jade("community")
+  }
+
+  get("/rss") {
+    contentType = "application/rss+xml"
+    jade("rss")
+  }
+
   notFound {
     // remove content type in case it was set through an action
     contentType = null
