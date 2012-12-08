@@ -9,27 +9,37 @@ html(lang="en")
     meta(name="description" content="")
     meta(name="author" content="")
 
-    link(href="css/bootstrap.css" rel="stylesheet")
-    link(href="css/styles.css" rel="stylesheet")
-    link(href="css/bootstrap-responsive.css" rel="stylesheet")
+    link(href="http://scalatypes.s3.amazonaws.com/css/bootstrap.css" rel="stylesheet")
+    link(href="http://scalatypes.s3.amazonaws.com/css/styles.css" rel="stylesheet")
+    link(href="http://scalatypes.s3.amazonaws.com/css/bootstrap-responsive.css" rel="stylesheet")
 
-    link(rel="shortcut icon" href="img/ico/favicon.ico")
-    link(rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/apple-touch-icon-144.png")
-    link(rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114.png")
-    link(rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72.png")
-    link(rel="apple-touch-icon-precomposed" href="img/ico/apple-touch-icon-57.png")
+    link(rel="shortcut icon" href="http://scalatypes.s3.amazonaws.com/img/ico/favicon.ico")
+    link(rel="apple-touch-icon-precomposed"
+         sizes="144x144"
+         href="http://scalatypes.s3.amazonaws.com/img/ico/apple-touch-icon-144.png")
+    link(rel="apple-touch-icon-precomposed"
+         sizes="114x114"
+         href="http://scalatypes.s3.amazonaws.com/img/ico/apple-touch-icon-114.png")
+    link(rel="apple-touch-icon-precomposed"
+         sizes="72x72"
+         href="http://scalatypes.s3.amazonaws.com/img/ico/apple-touch-icon-72.png")
+    link(rel="apple-touch-icon-precomposed"
+         href="http://scalatypes.s3.amazonaws.com/img/ico/apple-touch-icon-57.png")
 
   body
     div(id="wrap")
       div(class="navbar navbar-inverse navbar-fixed-top")
         div(class="navbar-inner")
           div(class="container")
-            a(class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse")
+            a(class="btn btn-navbar"
+              data-toggle="collapse"
+              data-target=".nav-collapse")
               span(class="icon-bar")
               span(class="icon-bar")
               span(class="icon-bar")
             a(class="brand" href="index.html")
-              img(src="img/site-logo.png" alt="Scala Types")
+              img(src="http://scalatypes.s3.amazonaws.com/img/site-logo.png"
+                  alt="Scala Types")
             div(class="nav-collapse collapse")
               ul(class="nav")
                 li(class="active")
@@ -42,7 +52,8 @@ html(lang="en")
         div(class="row")
           div(class="span8")
             h1 Podcast
-            div(class="post padder") BODY
+            div(class="post padder")
+              != body
 
     div(id="footer")
       div(class="container")
@@ -70,4 +81,4 @@ html(lang="en")
                 a(href="http://creativecommons.org/licenses/by-nc-nd/3.0/")
                   img(src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png")
     script(src="http://code.jquery.com/jquery-latest.js")
-    script(src="js/bootstrap.min.js")
+    script(src="http://scalatypes.s3.amazonaws.com/js/bootstrap.min.js")
