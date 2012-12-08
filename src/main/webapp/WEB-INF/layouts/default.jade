@@ -1,27 +1,73 @@
+-@ val body: String
+
 !!! 5
 html(lang="en")
   head
     meta(http-equiv="Content-type" content="text/html;charset=UTF-8")
-    title ?????
-    link(rel="stylesheets" type="text/css" media="screen" href="styleseets/bootstrap.css")
-    link(rel="stylesheets" type="text/css" media="screen" href="styleseets/custom.css")
+    title Scala Types
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(name="description" content="")
+    meta(name="author" content="")
+
+    link(href="css/bootstrap.css" rel="stylesheet")
+    link(href="css/styles.css" rel="stylesheet")
+    link(href="css/bootstrap-responsive.css" rel="stylesheet")
+
+    link(rel="shortcut icon" href="img/ico/favicon.ico")
+    link(rel="apple-touch-icon-precomposed" sizes="144x144" href="img/ico/apple-touch-icon-144.png")
+    link(rel="apple-touch-icon-precomposed" sizes="114x114" href="img/ico/apple-touch-icon-114.png")
+    link(rel="apple-touch-icon-precomposed" sizes="72x72" href="img/ico/apple-touch-icon-72.png")
+    link(rel="apple-touch-icon-precomposed" href="img/ico/apple-touch-icon-57.png")
+
   body
-    div(class="screenshot")
-      div(class="navbar-inner")
-        div(class="container")
-          div(class="nav-collapse collapse")
-            ul(class="nav")
-              li
-                a(href="#") Home
-              li
-                a(href="#") Episode Guide
+    div(id="wrap")
+      div(class="navbar navbar-inverse navbar-fixed-top")
+        div(class="navbar-inner")
+          div(class="container")
+            a(class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse")
+              span(class="icon-bar")
+              span(class="icon-bar")
+              span(class="icon-bar")
+            a(class="brand" href="index.html")
+              img(src="img/site-logo.png" alt="Scala Types")
+            div(class="nav-collapse collapse")
+              ul(class="nav")
+                li(class="active")
+                  a(href="index.html") Podcast
+                li
+                  a(href="archives.html") Archives
+                li
+                  a(href="community.html") Community
+      div(class="content container")
+        div(class="row")
+          div(class="span8")
+            h1 Podcast
+            div(class="post padder") BODY
+
+    div(id="footer")
       div(class="container")
-        h1 The Scala Types
-        content ?????
-
-      hr
-
-      footer
-        © The Scala Types 2011-2012
-        address
-          a(href="ymasory@gmail.com") ymasory@gmail.com
+        div(class="row")
+          div(class="span3")
+            span(class="footer-title") Feedback
+            ul
+              li
+                a(href="mailto:ymasory@gmail.com") Email
+              li
+                a(href="http://www.twitter.com/scalatypes") Twitter
+              li
+                a(href="https://groups.google.com/forum/?hl=en#!forum/scala-types") Scala Types Google group
+          div(class="span3")
+            span(class="footer-title") Syndication
+            ul
+              li
+                a(href="http://itunes.apple.com/us/podcast/the-scala-types/id443785200?uo=4") iTunes
+              li
+                a(href="http://scalatypes.com/rss") RSS
+          div(class="span3")
+            span(class="footer-title") License
+            ul
+              li
+                a(href="http://creativecommons.org/licenses/by-nc-nd/3.0/")
+                  img(src="http://i.creativecommons.org/l/by-nc-nd/3.0/88x31.png")
+    script(src="http://code.jquery.com/jquery-latest.js")
+    script(src="js/bootstrap.min.js")

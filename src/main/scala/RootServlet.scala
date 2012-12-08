@@ -6,11 +6,8 @@ import scalate.ScalateSupport
 class RootServlet extends ScalatraServlet with ScalateSupport {
 
   get("/") {
-    redirect("http://scalatypes.libsyn.com")
-  }
-
-  get("/rss") {
-    redirect("http://scalatypes.libsyn.com/rss")
+    contentType = "text/html"
+    jade("index")
   }
 
   notFound {
