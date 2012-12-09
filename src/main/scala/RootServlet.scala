@@ -5,29 +5,29 @@ import scalate.ScalateSupport
 
 class RootServlet extends ScalatraServlet with ScalateSupport {
 
-  get("/") {
+  before {
     contentType = "text/html"
+  }
+
+  get("/") {
     jade("index")
   }
 
-  get("/episodes") {
-    contentType = "text/html"
-    jade("episodes")
-  }
+  // get("/episodes") {
+  //   jade("episodes")
+  // }
 
-  get("/episodes/:id") {
-    contentType = "text/html"
-    jade("episode", "id" -> params("id").toLong)
-  }
+  // get("/episodes/:id") {
+  //   jade("episode", "id" -> params("id").toLong)
+  // }
 
-  get("/community") {
-    contentType = "text/html"
-    jade("community")
-  }
+  // get("/community") {
+  //   jade("community")
+  // }
 
   get("/rss") {
     contentType = "application/rss+xml"
-    jade("rss")
+    jade("atom", "layout" -> "")
   }
 
   notFound {

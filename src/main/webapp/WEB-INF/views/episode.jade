@@ -1,0 +1,16 @@
+-@ episode: com.scalatypes.site.Episode
+
+item
+  title= episode.title
+  pubDate= episode.pubDate.toString
+  guid(isPermaLink="false") ?????
+  link= episode.page
+  media:thumbnail(url={episode.thumbnail})
+  description= episode.summary
+  enclosure(length={episode.audio.length}
+            type={episode.audio.contentType
+            url={episode.audio.url})
+  itunes:duration= episode.audio.duration
+  itunes:explicit= episode.rating
+  itunes:keywords= episode.keywords
+  itunes:subtitle= episode.subtitle

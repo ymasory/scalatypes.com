@@ -1,0 +1,12 @@
+{
+    "title" : "Ivan Porto Carrero on Scalatra and Json4s",
+    "guid" : "7b45645ab1999b9f192a4d5892e48ce5",
+    "pubDate" : "Wed, 05 Dec 2012 00:01:00 +0000",
+    "explicit" : "explicit",
+    "subtitle" : "Ivan Porto Carrero discusses Scalatra, a tiny web framework inspired by Sinatra, and Json4s, an attempt to unify the various JSON ASTs in the Scala community.",
+    "thumbnail" : "http://scalatypes.s3.amazonaws.com/img/guests/ivan-porto-carrero.jpg",
+    "length" : "44985102",
+    "type" : "audio/mpeg",
+    "url" : "http://scalatypes.s3.amazonaws.com/episodes/024-ivan-porto-carrero.mp3",
+    "duration" : "52:07"
+}
