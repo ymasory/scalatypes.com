@@ -1,11 +1,13 @@
 import com.scalatypes.site
 
+import java.net.URI
+import org.joda.time.DateTime
+
 case class Episode(
   title: String,
   pubDate: DateTime,
   page: URI,
   thumbnail: URI,
-  audio: Audio,
   rating: ItunesRating,
   keywords: List[String],
   subtitle: String

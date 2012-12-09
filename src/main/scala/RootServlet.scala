@@ -5,7 +5,7 @@ import scalate.ScalateSupport
 
 class RootServlet extends ScalatraServlet with ScalateSupport {
 
-  before {
+  before() {
     contentType = "text/html"
   }
 
