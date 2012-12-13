@@ -1,6 +1,6 @@
 # scalatypes.com #
 
-Currently deployed to [http://scalatypes.herokuapps.com/](http://scalatypes.herokuapps.com/).
+Currently deployed to [http://scalatypes.herokuapp.com/](http://scalatypes.herokuapp.com/).
 
 [![Build Status](https://ymasory.ci.cloudbees.com/job/scalatypes.com/badge/icon)](https://ymasory.ci.cloudbees.com/job/scalatypes.com/)
 
