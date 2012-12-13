@@ -1,3 +1,4 @@
+[![Build Status](https://ymasory.ci.cloudbees.com/job/scalatypes.com/badge/icon)](https://ymasory.ci.cloudbees.com/job/scalatypes.com/)
 # scalatypes.com #
 
 Currently deployed to [http://beta.scalatypes.com/](http://beta.scalatypes.com/).
